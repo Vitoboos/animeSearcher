@@ -1,0 +1,240 @@
+body{
+    background-color: #23272A;
+}
+/* 
+    Name Form Styles
+*/
+
+#nameForm{
+    display: flex;
+    justify-content: center;
+    margin: 2.5vh 20vw;
+}
+
+#nameForm label{
+    color: white;
+}
+
+#nameForm input{
+    width: 15vw;
+}
+
+#nameForm button{
+    cursor: pointer;
+}
+
+/*
+    Main Grid Style
+*/
+
+#formGrid{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+}
+
+/*
+    Demographic Style
+*/
+
+#demographicsForm{
+    margin: 0;
+}
+
+#demographicsForm .title{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+#demographicsForm .form{
+    padding: 0;
+    list-style-type: none;
+}
+
+#demographicsForm .form .demographic{
+    text-align: center;
+    width: 7.5vw;
+
+    background-color: #404EED;
+    color: white;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#demographicsForm .form .demographic:hover{
+    animation: hoverDemographic 0.25s;
+    background-color: #99AAB5;
+    cursor: pointer;
+}
+
+@keyframes hoverDemographic {
+    0%{background-color: #404EED;}
+    100%{background-color: #99AAB5;}
+}
+
+/*
+    Tag Styles
+*/
+
+#tagSearch{
+    margin: 0;
+}
+
+#tagSearch .title{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+#tagSearch #tagList{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 5px;
+    list-style-type: none;
+
+    border-style: double;
+    border-radius: 5px;
+    border-width: 10px;
+    border-color: black;
+    border-color: purple;
+    border-inline-color: rgb(185, 76, 185);
+
+}
+
+#tagSearch #tagList .tag{
+    background-color: #404EED;
+    text-align: center;
+    color: white;
+
+    padding: 5px;
+    border-style: solid;
+    border-width: thick;
+    border-color: #23272A;
+    border-radius: 25px;
+}
+
+
+#tagSearch #tagList .tag:hover{
+    cursor: pointer;
+    background-color: #5865F2;
+}
+
+
+/*
+    Watchlist Style
+*/
+
+#watchList{
+    color: white;
+}
+
+#watchList .box{
+    margin: 0px 1vw;
+    padding: 0px;
+}
+
+#watchList .box li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 1vh 0px;
+    background-color: #5865F2;
+    border-radius: 25px;
+}
+
+#watchList .title{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+#watchList .btnBox{
+    display: grid;
+    margin: 0px 5vw;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#watchList .btnBox .watchBtn{
+    display: block;
+    margin: auto;
+    width: 5vw;
+}
+
+/*
+    Render Results
+*/
+
+.searchList{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.searchList .genreTitle{
+
+    margin: 0;
+    color: white;
+    text-align: center;
+    height: 5vh;
+    grid-column: span 4;
+
+}
+
+.searchList .item{
+
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.searchList .item:hover{
+
+    background-color: #99AAB5;
+    cursor: pointer;
+
+}
+
+.searchList .item:hover .title{
+
+    color: white;
+
+}
+
+.searchList .item .title{
+
+    display: block;
+    margin: auto;
+
+    width: 15vw;
+    height: 5vh;
+
+    color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.searchList .item .image{
+
+    display: block;
+    margin: auto;
+    padding: 10px 0px;
+    width: 20vw;
+    height: 60vh;
+
+}
+
+.searchList .noResults{
+
+    font-size: 24px;
+    grid-column: span 4;
+    color: white;
+    text-align: center;
+
+}
